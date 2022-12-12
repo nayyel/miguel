@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>simulacro</title>
+    <link rel="stylesheet" href="/MiguelVizueteTrupita/Aplicacionesweb(Juan)/Tema2/Proximaentrega/estilos.css">
+  
+  </head>
+ 
+
+
+  <body>
+  <h3 id="h3">simulacro de Miguel-Vizuete</h3><br>
+ <br><br>
+    <!--Requisitos de los campos
+    email - solo admite correos educa.madrid.org
+    fecha - solo fechas de noviembre 2021
+    archivos - solo archivos pdf
+    número - admita solo números pares entre 2 y 40
+    teléfono - 9 números en formato xxx-xx-xx-xx (con guiones)
+	contraseña - Entre 8 y 12 letras y/o números
+    -->
+
+<form  id="form" action="" >
+<h2 >Formulario de alta en miweb.com</h2>
+
+
+<labelfor="Correo"><b>Tu direccion de correo electrónico</b></label>
+<br><input type="email"  placeholder="Alumno@educa.madrid.org"  required pattern="educa.madrid.org"  id="Correo">
+<br><br>
+<label for="Fecha"><b>Selecciona la fecha del pedido</label>
+<br><input type="date" id="Fecha" value="2021-11-30" required  min="2021-11-0" max="2021-11-30"> 
+<br><br>
+<label for="PDF"><b>Introduzca el pedido en formato pdf</b></label>
+<input type="file"  id="PDF" >
+<br><br>
+<label for="Zapatos"><b>Introduzca cantidad de zapatos que desea comprar</b></label>
+<input type="number" id="Zapatos" min="2" max="40">
+<br><label for="Telefono">Telefono de contacto con formato xxx-xx-xx-xx</label>
+<br><input type="tel"  id="Telefono" required>
+
+
+</form>
+  
+  </body>
+</html>
